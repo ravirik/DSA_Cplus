@@ -26,6 +26,7 @@ void pattern8(int n)
     }
 }
 
+
 int main()
 {
     int t;
