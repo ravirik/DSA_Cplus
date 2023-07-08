@@ -2,15 +2,17 @@
 
 using namespace std;
 
-void test_pattern(int n)
+void pattern16(int n)
 {
-    for (int i=1; i<=n; i++)
+    char b = 'A';
+    for(int i=1; i<=n; i++)
     {
-        for(int j=1; j<=i; j++)
+        for(char ch='A'; ch<=b; ch++)
         {
-            cout <<i<<' ';
+            cout<<b<<' ';
         }
-        cout << endl;
+        b += 1;
+    cout << endl;
     }
 }
 
@@ -22,6 +24,6 @@ int main()
     {
         int n;
         cin >> n;
-        test_pattern(n);
+        pattern16(n);
     }
 }
