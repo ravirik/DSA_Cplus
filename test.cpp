@@ -2,26 +2,35 @@
 
 using namespace std;
 
-void test_pattern(int n)
+void extract_num(int n)
 {
-    for (int i=1; i<=n; i++)
+    int count=0;
+    while( n > 0)
     {
-        for(int j=1; j<=i; j++)
-        {
-            cout <<i<<' ';
-        }
-        cout << endl;
+        n =  n / 10;
+        count += 1;
     }
+    cout<<count<<endl;
 }
+
+   
 
 int main()
 {
     int t;
-    cin >> t;
-    for(int i=0; i<t; i++)
+
+    cin>>t;
+
+    for (int i=0; i<t; i++)
     {
         int n;
-        cin >> n;
-        test_pattern(n);
+
+        cin>>n;
+
+        
     }
+
+    extract_num(n);
+
+    return 0;
 }

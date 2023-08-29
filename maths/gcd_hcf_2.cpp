@@ -24,3 +24,5 @@ int main()
     gcd_hcf_2(a,b);
 
 }
+
+// TC ( Time Complexity ) = O( logϕ(min(a,b)))
