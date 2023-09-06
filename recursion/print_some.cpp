@@ -2,14 +2,12 @@
 
 using namespace std;
 
-int cnt=0;
-void print_some(int n)
+void print_some(int n, int cnt =0)
 {
     if (cnt<n)
     {
         cout<<cnt<<endl;
-        cnt++;
-        print_some(n);
+        print_some(n, cnt+1);
     }
     else return;
 }
