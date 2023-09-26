@@ -2,22 +2,23 @@
 
 using namespace std;
 
-void print_numberop(int i, int n)
+void print_numberop(int n)
 {
-    if(i<1) return;
+    if(n<1) return;
     
-    cout<<i<<endl;
-    print_numberop(i-1,n);
+    cout<<n<<endl;
+    print_numberop(n-1);
 }
 
 int main()
 {
     int t;
     cin>>t;
-    for (int i=1; i<t; i++)
+    for (int i=0; i<t; i++)
     {
         int n;
         cin>>n;
-        print_numberop(n,n);
+        print_numberop(n);
     }
+    return 0;
 }
